@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas - Patas do Amanhã</title>
+ 
+    <link rel="stylesheet" href="../assets/css/empresas.css">
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/png">
+    <script src="https://kit.fontawesome.com/8fc9072edd.js" crossorigin="anonymous"></script>
+ 
+</head>
+ 
+<body class="container">
+    <header class="area-header" id="header"></header>
+    <!-- NOVA SEÇÃO: Nossa visão -->
+<section class="pts-nossaVisao">
+    <!-- Seção com apelo emocional para doações -->
+    <div class="pts-visao">
+        <!-- Container para conteúdo -->
+        <h2>Empresas</h2>
+        <h3 style="text-align: center;">Contribua hoje e ajude a construir uma sociedade mais justa.</h3>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- Título principal -->
+
+        <!-- Novo contêiner para alinhar texto e imagem lado a lado -->
+        <div class="conteudo">
+            <div class="pts-stories">
+                <!-- Histórias de animais resgatados -->
+                <h3 class="pts-stories-paragrafo">A união de empresas, ONGs e sociedade civil é fundamental.</h3> <br>
+                
+                <p>
+                    Contamos com o apoio de organizações como GreenPet Soluções, que investiu na compra de insumos veterinários para nossas campanhas de castração,
+                        e Rede Supermercados Bem-Estar, que promoveu arrecadações mensais de ração em todas as suas unidades.<br>
+                    A Tech4Pets doou software de gestão para otimizar nossos processos de acolhimento e adoção,
+                       enquanto a Construtora Amor Animal subsidiou a reforma de abrigos parceiros.<br>
+                    Essas colaborações não só ampliaram nossa capacidade de resgate e acolhimento,
+                        mas também reforçaram o compromisso social de cada empresa envolvida, gerando maior engajamento de clientes e colaboradores e fortalecendo a imagem
+                        corporativa junto à comunidade.
+                </p>
+            </div>
+            <section class="profile">
+                <div class="foto-profile">
+                    <img src="../assets/img/logo2.png" alt="Foto Pessoal">
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+
+    <div class="pts-parseria">
+        <img src="../assets/img/logo2.png" name="logo-mini" class="pts-parseria-imgMini">
+        <h3>Alguns pessoas que apoiam o nosso trabalho!</h3><br>
+
+        <div class="pts-parseria-imgs">
+            <div>
+                <img src="../assets/img/foto6.jpg" name = "1" class="small-image">
+                <img src="../assets/img/mulherPetRação.jpg" name = "2" class="small-image">
+                <img src="../assets/img/foto5.jpg" name = "3" class="small-image">
+                <img src="../assets/img/fotoPet2.jpg" name = "4" class="small-image">
+            </div>
+            <div>
+                <img src="../assets/img/foto3.jpg" name = "5" class="small-image">
+                <img src="../assets/img/foto4.jpg" name = "6" class="small-image">
+                <img src="../assets/img/fotografiaPet.jpg" name = "7" class="small-image">
+                <img src="../assets/img/fotoPet1.jpg" name = "8" class="small-image">
+            </div>
+        </div>
+
+        
+        
+
+    </div>
+    
+</section>
+
+  
+
+<footer class="pts-site-footer" id="footer"></footer>
+<script>
+    // Carrega o conteúdo de um arquivo em um elemento com ID "header"
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+</script>
+<script>
+    // Carrega o conteúdo de um arquivo em um elemento com ID "footer"
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+
+</body>
+</html>

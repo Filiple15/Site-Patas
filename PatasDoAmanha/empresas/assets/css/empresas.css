@@ -1,0 +1,222 @@
+
+ 
+ :root {
+    --primary-color: #2E8B57;       /* Cor primária (verde escuro) */
+    --secondary-color: #88b198;     /* Cor secundária (verde claro) */
+    --accent-color: #ff6b6b;        /* Cor de destaque (rosa/vermelho) */
+    --text-color: #333;             /* Cor padrão para texto */
+    --light-bg: #f9f9f9;            /* Cor de fundo clara */
+    --dark-bg: #2c3e50;             /* Cor de fundo escura */
+    --header-height: 100px;          /* Altura do cabeçalho */
+    --light-bg: rgba(247, 248, 239, 0.788);     /* Cor de fundo clara */
+}
+ 
+/*
+ * ===== RESET E CONFIGURAÇÕES GERAIS =====
+ * Remove margens, paddings e bordas padrão e define box-sizing para border-box
+ */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box; /* Faz com que padding e border não aumentem o tamanho do elemento */
+}
+ 
+/*
+ * Configurações gerais do corpo do documento
+ */
+body {
+    font-family: 'SoDo Sans', 'Nunito', sans-serif; /* Define a família de fontes */
+    width: 100%; /* Largura total */
+    min-height: 100vh; /* Altura mínima igual à altura da viewport */
+    display: flex; /* Ativa flexbox */
+    flex-direction: column; /* Organiza os filhos em coluna */
+    background-color: #ffffff; /* Cor de fundo branca */
+    color: var(--text-color); /* Cor do texto usando variável */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    padding-top: 0px; /* Remove padding superior */
+}
+ 
+/*
+ * ===== IMPORTAÇÃO DE FONTES =====
+ * Importa e define fontes personalizadas
+ */
+ 
+/* Importa a fonte Nunito do Google Fonts */
+@import url("https://fonts.google.com/share?selection.family=Nunito:ital,wght@0,200..1000;1,200..1000");
+ 
+/* Define a fonte personalizada SoDo Sans em três pesos diferentes */
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('./fonts/SoDoSans-Bold.woff'); /* Caminho para o arquivo da fonte */
+    font-weight: bold;
+    font-style: normal; /* Estilo da fonte */
+}
+ 
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('./fonts/SoDoSans-Regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('./fonts/SoDoSans-SemiBold.woff');
+    font-weight: 600; /* Semi-negrito */
+    font-style: normal;
+}
+ 
+/*
+ * ===== HEADER CORRIGIDO =====
+ * Estilização do cabeçalho fixo no topo da página
+ */
+header {
+    position: fixed; /* Fixa o cabeçalho no topo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Largura total */
+    height: var(--header-height); /* Altura usando variável */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    background-color: rgba(255, 255, 255, 0.98); /* Fundo branco com leve transparência */
+    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+    -webkit-backdrop-filter: blur(5px); /* Versão para Safari */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Borda inferior sutil */
+    transition: all 0.3s ease; /* Transição suave para animações */
+}
+ 
+/*
+ * Efeito aplicado ao cabeçalho quando a página é rolada
+ */
+header.scrolled {
+    height: 80px; /* Altura reduzida */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra mais pronunciada */
+}
+ 
+/* ===== SEÇÃO “Nossa Visão” ===== */
+.pts-nossaVisao {
+    background-color: var(--light-bg);
+    padding: 3rem 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .pts-visao {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .pts-nossaVisao h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .pts-nossaVisao p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+  }
+  
+  /* Alinhamento de texto e imagem lado a lado */
+  .conteudo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .conteudo .pts-stories {
+    flex: 1;
+  }
+  
+  /* Estilização do parágrafo em .pts-stories */
+  .pts-stories-paragrafo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 100%;
+    color: #19663a;
+  }
+  
+  /* Container de perfil/imagem */
+  .profile {
+    width: 200px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 70%;
+  }
+  
+  .foto-profile {
+    width: 200px;
+    height: 200px;
+    display: flex;
+  }
+  
+  /* ===== SEÇÃO “Parcerias” ===== */
+  .pts-parseria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .pts-parseria-imgMini {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .pts-parseria h3 {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .pts-parseria h3::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: var(--light-bg);
+    margin: 10px auto 0;
+  }
+  
+  .pts-parseria-imgs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 100%;
+  }
+  
+  .small-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .small-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+ 
