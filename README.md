@@ -9,7 +9,6 @@
 - ⚛️ **Migração para React** (em andamento)
 - 🎨 **Novo Design System**
 - 🔄 **Integrações API REST**
-- 📱 **Versão PWA** (planejada)
 
 ## 🛠️ Stack Tecnológico Atual
 | Front-end          | Back-end           | Ferramentas       |
