@@ -17,21 +17,3 @@
 | ⚛️ React (em migração)| 🚀 Node.js         | 📊 Jira           |
 | 🔥 JavaScript ES6+  | 🔗 API REST        | 🗓️ Git Timeline   |
 | 🎨 CSS Modules      | 🗃️ MongoDB        | 🧪 Jest           |
-
-## ✨ Features Implementadas
-- 🏆 **Sistema Completo de Gestão** (pets, adoções, doações)
-- 📝 **Blog Integrado** (histórias de resgate)
-- 💰 **Painel Financeiro Transparente**
-- 📲 **Área do Voluntário/Doador**
-- 🔍 **Busca Avançada** (filtros por espécie, localidade)
-
-## 📅 Linha do Tempo
-```mermaid
-timeline
-    title Evolução do Projeto
-    section 2025
-        Janeiro : Início do Projeto (HTML/CSS/JS)
-        Março : Versão 1.0 Finalizada
-    section 2026
-        Abril : Início Migração React
-        Junho : Prev. Conclusão V2.0
