@@ -1,4 +1,4 @@
-#  Patas do Amanhã - Template Avançado para ONGs 🌟
+#  Patas do Amanhã - Template Avançado para ONGs 
 
 🚀 **Projeto Finalizado | Em Migração para React**  
 ✨ **Uma solução completa para organizações de proteção animal**
