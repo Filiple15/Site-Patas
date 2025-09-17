@@ -7,7 +7,7 @@
 
 ##  🌐 Link para acessar o Site:
 
-- 
+- No momento este site está indisponível!
 
 ---
 
